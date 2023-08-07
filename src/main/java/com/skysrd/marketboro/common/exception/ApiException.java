@@ -1,6 +1,6 @@
 package com.skysrd.marketboro.common.exception;
 
-import com.skysrd.noticemanagement.common.result.JsonResultData;
+import com.skysrd.marketboro.common.result.JsonResultData;
 import lombok.Builder;
 import lombok.Getter;
 import org.springframework.http.HttpStatus;
