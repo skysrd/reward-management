@@ -17,6 +17,7 @@ public class MemberService {
     @Transactional
     public Long createMember() {
         Member member = Member.createBuilder().build();
+        memberRepository.save(member);
         return member.getId();
     }
 
