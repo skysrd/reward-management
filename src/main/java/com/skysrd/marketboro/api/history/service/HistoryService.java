@@ -7,10 +7,13 @@ import com.skysrd.marketboro.api.history.domain.entity.History;
 import com.skysrd.marketboro.api.history.domain.enums.RewardType;
 import com.skysrd.marketboro.api.history.repository.HistoryRepository;
 import com.skysrd.marketboro.api.member.domain.entity.Member;
+import com.skysrd.marketboro.api.member.repository.MemberRepository;
 import com.skysrd.marketboro.api.member.service.MemberService;
+import com.skysrd.marketboro.common.exception.ApiException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

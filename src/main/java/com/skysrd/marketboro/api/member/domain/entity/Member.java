@@ -20,7 +20,6 @@ public class Member {
     @Column(name = "reward_summary")
     private Integer summary;
 
-
     //사용자 생성 빌더
     @Builder(builderClassName = "createBuilder", builderMethodName = "createBuilder")
     public Member(Long id) {

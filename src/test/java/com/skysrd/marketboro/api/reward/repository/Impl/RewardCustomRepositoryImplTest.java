@@ -53,8 +53,6 @@ class RewardCustomRepositoryImplTest {
     @Test
     void findBalanceSummaryByMember() {
         //given
-
-
         memberRepository.save(PREFIX_MEMBER_01);
 
         List<Reward> rewardList = new ArrayList<>();
