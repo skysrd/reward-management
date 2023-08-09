@@ -296,3 +296,17 @@ Status 200
   "path": "/api/history"
 }
 ```
+
+## 5. 검증
+
+
+## 6. 개발 환경
+- Java 17
+- SpringBoot 3.1.2
+- QueryDsl 5.0.0
+- Database 
+  - In-memory H2
+  - MySQL 8.0.33-1.el8
+- IntelliJ IDEA 2021.03
+- MacOS Ventura 13.4(22F66)
+- JUnit5 - Jupiter
