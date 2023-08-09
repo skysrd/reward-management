@@ -5,7 +5,7 @@ import com.skysrd.marketboro.api.history.domain.enums.RewardType;
 import com.skysrd.marketboro.api.history.service.HistoryService;
 import com.skysrd.marketboro.api.member.domain.entity.Member;
 import com.skysrd.marketboro.api.member.service.MemberService;
-import com.skysrd.marketboro.api.reward.domain.Reward;
+import com.skysrd.marketboro.api.reward.domain.entity.Reward;
 import com.skysrd.marketboro.api.reward.domain.dto.RewardRequest;
 import com.skysrd.marketboro.api.reward.domain.dto.RewardResponse;
 import com.skysrd.marketboro.api.reward.repository.RewardRepository;

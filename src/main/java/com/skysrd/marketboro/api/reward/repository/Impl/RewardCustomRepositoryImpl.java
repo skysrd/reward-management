@@ -1,7 +1,7 @@
 package com.skysrd.marketboro.api.reward.repository.Impl;
 
 import com.skysrd.marketboro.api.member.domain.entity.Member;
-import com.skysrd.marketboro.api.reward.domain.Reward;
+import com.skysrd.marketboro.api.reward.domain.entity.Reward;
 import com.skysrd.marketboro.api.reward.repository.RewardCustomRepository;
 import com.skysrd.marketboro.common.support.Querydsl4RepositorySupport;
 
@@ -9,7 +9,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import static com.skysrd.marketboro.api.reward.domain.QReward.reward;
-import static com.skysrd.marketboro.api.member.domain.entity.QMember.member;
 
 public class RewardCustomRepositoryImpl extends Querydsl4RepositorySupport implements RewardCustomRepository {
 

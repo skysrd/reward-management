@@ -2,9 +2,8 @@ package com.skysrd.marketboro.api.reward.service;
 
 import com.skysrd.marketboro.api.history.service.HistoryService;
 import com.skysrd.marketboro.api.member.domain.entity.Member;
-import com.skysrd.marketboro.api.member.repository.MemberRepository;
 import com.skysrd.marketboro.api.member.service.MemberService;
-import com.skysrd.marketboro.api.reward.domain.Reward;
+import com.skysrd.marketboro.api.reward.domain.entity.Reward;
 import com.skysrd.marketboro.api.reward.domain.dto.RewardRequest;
 import com.skysrd.marketboro.api.reward.domain.dto.RewardResponse;
 import com.skysrd.marketboro.api.reward.repository.RewardRepository;
@@ -16,12 +15,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -29,7 +23,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class RewardServiceTest {

@@ -3,25 +3,19 @@ package com.skysrd.marketboro.api.reward.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.skysrd.marketboro.api.member.domain.entity.Member;
 import com.skysrd.marketboro.api.member.repository.MemberRepository;
-import com.skysrd.marketboro.api.reward.domain.Reward;
+import com.skysrd.marketboro.api.reward.domain.entity.Reward;
 import com.skysrd.marketboro.api.reward.domain.dto.RewardRequest;
 import com.skysrd.marketboro.api.reward.repository.RewardRepository;
-import com.skysrd.marketboro.api.reward.service.RewardService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureWebMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootContextLoader;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 

@@ -2,7 +2,7 @@ package com.skysrd.marketboro.api.reward.repository.Impl;
 
 import com.skysrd.marketboro.api.member.domain.entity.Member;
 import com.skysrd.marketboro.api.member.repository.MemberRepository;
-import com.skysrd.marketboro.api.reward.domain.Reward;
+import com.skysrd.marketboro.api.reward.domain.entity.Reward;
 import com.skysrd.marketboro.api.reward.repository.RewardRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

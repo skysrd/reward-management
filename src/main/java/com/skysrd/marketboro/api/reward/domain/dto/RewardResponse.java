@@ -1,11 +1,6 @@
 package com.skysrd.marketboro.api.reward.domain.dto;
 
-import com.skysrd.marketboro.api.member.domain.entity.Member;
-import com.skysrd.marketboro.api.reward.domain.Reward;
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import com.skysrd.marketboro.api.reward.domain.entity.Reward;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;

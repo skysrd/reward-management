@@ -3,7 +3,6 @@ package com.skysrd.marketboro.api.history.repository;
 import com.skysrd.marketboro.api.history.domain.entity.History;
 import com.skysrd.marketboro.api.history.domain.enums.RewardType;
 import com.skysrd.marketboro.api.member.domain.entity.Member;
-import com.skysrd.marketboro.api.reward.domain.Reward;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
