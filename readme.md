@@ -298,8 +298,10 @@ Status 200
 ```
 
 ## 5. 검증
-
-
+- Testcode를 활용한 Unit 테스트 (JUnit5, BDDMockito)
+- http request를 이용한 검증
+  - IntelliJ의 Scratch 기능 중 http request를 생성, 전송할 수 있는 기능을 활용했습니다.
+  
 ## 6. 개발 환경
 - Java 17
 - SpringBoot 3.1.2
@@ -309,4 +311,4 @@ Status 200
   - MySQL 8.0.33-1.el8
 - IntelliJ IDEA 2021.03
 - MacOS Ventura 13.4(22F66)
-- JUnit5 - Jupiter
+- JUnit5
