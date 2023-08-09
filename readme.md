@@ -298,9 +298,9 @@ Status 200
 ```
 
 ## 5. 검증
-- Testcode를 활용한 Unit 테스트 (JUnit5, BDDMockito)
-- http request를 이용한 검증
-  - IntelliJ의 Scratch 기능 중 http request를 생성, 전송할 수 있는 기능을 활용했습니다.
+- Testcode를 활용한 테스트 (JUnit5, BDDMockito)
+- http request를 이용한 테스트
+  - IntelliJ의 Scratch 기능 중 http request를 생성, 전송할 수 있는 기능 활용 테스트
   
 ## 6. 개발 환경
 - Java 17
