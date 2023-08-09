@@ -151,4 +151,40 @@ class RewardServiceTest {
         assertThat(rewardResponse.getBalance()).isEqualTo(-100);
         assertThat(rewardResponse.getInitialPrice()).isEqualTo(-100);
     }
+
+    @Test
+    @DisplayName("적립금 롤백")
+    void rollbackReward () {
+        //given
+        Member member = Member.createBuilder()
+                .id(1L)
+                .build();
+
+        Reward reward = Reward.createBuilder()
+                .id(1L)
+                .member(member)
+                .initialPrice(100)
+                .build();
+
+        Reward rollbackReward = Reward.createBuilder()
+                .id(2L)
+                .member(member)
+                .initialPrice(-50)
+                .build();
+
+        given(rewardRepository.findBalanceSummaryByMember(member)).willReturn(reward.getBalance() - rollbackReward.getBalance());
+        given(memberService.getMember(any())).willReturn(member);
+        given(rewardRepository.findById(any())).willReturn(Optional.of(reward));
+
+        Integer beforeSummary = rewardService.getRewardSummary(1L);
+
+        //when
+        given(rewardRepository.findBalanceSummaryByMember(member)).willReturn(reward.getBalance());
+        given(rewardRepository.findById(any())).willReturn(Optional.of(rollbackReward));
+        RewardResponse rollbackResponse = rewardService.rollbackRewardSpend(2L);
+        Integer afterSummary = rewardService.getRewardSummary(1L);
+
+        //then
+        assertEquals(beforeSummary, afterSummary - rollbackResponse.getBalance());
+    }
 }
